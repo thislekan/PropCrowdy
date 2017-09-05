@@ -11,10 +11,11 @@ console.log(navlinks);
 })*/
 
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
+    //console.log(window.scrollY);
     if (window.scrollY >= 150) {
         navbar.style.backgroundColor = "white";
         navbar.style.color = "black";
+	navbar.style.zIndex = 3;
         for (var i = 0; i < navlinks.length - 1; i++) {
             navlinks[i].style.color = "black";
         }
